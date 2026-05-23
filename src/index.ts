@@ -10,7 +10,7 @@ let history: string[] = [];
 let index = -1;
 
 async function init() {
-  await navigator.serviceWorker.register("sw.js");
+  await navigator.serviceWorker.register("pingas.js");
   await navigator.serviceWorker.ready;
 
   const connection = new (window as any).BareMux.BareMuxConnection(

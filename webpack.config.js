@@ -53,8 +53,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: "sw/sw.js",
-          to: "sw.js",
+          from: "sw/pingas.js",
+          to: "pingas.js",
         },
       ],
     }),
