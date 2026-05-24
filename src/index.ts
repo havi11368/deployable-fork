@@ -130,6 +130,19 @@ const startPageHTML = `
       font-size: 13px;
       color: #aaa;
     }
+    .discord-link {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+    .discord-link a {
+      color: #5865F2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .discord-link a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -143,6 +156,7 @@ const startPageHTML = `
       <button type="submit">Go</button>
     </form>
     <p>Type a URL or a search query</p>
+    <p class="discord-link">Feedback? <a href="https://discord.gg/VWh8UmD2gv" target="_blank" rel="noopener noreferrer">Join our Discord!</a></p>
   </div>
   <script>
     const form = document.getElementById("search-form");
