@@ -9,6 +9,18 @@ export const startPageHTML = `
     *, *::before, *::after {
       box-sizing: border-box;
     }
+    @keyframes browserLoad2 {
+        0% {
+          transform: scale(1.2);
+          opacity: 0;
+        }
+        35% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+      }
+    }
     body {
       margin: 0;
       font-family: "Nunito", sans-serif;
@@ -25,14 +37,26 @@ export const startPageHTML = `
       text-align: center;
     }
     .logo-container {
+    animation: browserLoad2 .5s ease;
       margin-bottom: 24px;
     }
     .logo {
+      cursor: pointer;
+      transition: all 0.4s ease;
+      image-rendering: pixelated;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+      -moz-user-drag: none;
+      animation-fill-mode: both;
       width: 400px;
-      max-width: 80%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+    }
+    .logo:hover {
+      transition: all 0.4s ease;
+      transform: scale(1.1);
+    }
+    .logo:active {
+      transition: all 0.4s ease;
+      transform: scale(.9);
     }
     h1 {
       font-size: 34px;
@@ -104,8 +128,9 @@ export const startPageHTML = `
       <input id="search-input" type="text" placeholder="Enter URL or search query" autocomplete="off" autofocus />
       <button type="submit">Go</button>
     </form>
-    <p>Type a URL or a search query</p>
-    <p class="discord-link">Feedback? <a href="https://discord.gg/VWh8UmD2gv" target="_blank" rel="noopener noreferrer">Join our Discord!</a></p>
+    <p>deployable by falling3-4</p>
+    <p>Hosted on lrga.space by Toast (@havi11368)</p>
+    <p class="discord-link">Feedback? <a href="https://discord.gg/VWh8UmD2gv" target="_blank" rel="noopener noreferrer">Join their Discord.</a></p>
   </div>
   <script>
     const form = document.getElementById("search-form");
