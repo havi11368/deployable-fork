@@ -1,7 +1,7 @@
 # Deployable
 
 <p align="center">
-  <img src="./src/assets/logo.png" alt="Deployable logo" width="300" style="image-rendering: pixelated;">
+  <img src="./src/assets/logo.png" alt="Deployable logo" style="image-rendering: pixelated;" width="300">
 </p>
 
 Deployable is an easy-to-deploy proxy site with over 900 games.
