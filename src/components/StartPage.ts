@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-alt.png";
 
 export const startPageHTML = `
 <!DOCTYPE html>
