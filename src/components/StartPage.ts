@@ -128,7 +128,7 @@ export const startPageHTML = `
       <input id="search-input" type="text" placeholder="Enter URL or search query" autocomplete="off" autofocus />
       <button type="submit">Go</button>
     </form>
-    <p>deployable by falling3-4</p>
+    <p>Deployable by falling3-4</p>
     <p>Hosted on lrga.space by Toast (@havi11368)</p>
     <p class="discord-link">Feedback? <a href="https://discord.gg/VWh8UmD2gv" target="_blank" rel="noopener noreferrer">Join their Discord.</a></p>
   </div>
